@@ -4,3 +4,4 @@ refactor_dbt: # this does not match the profile: key
     dev:
       type: snowflake
       schema: MART
+      database: JAFFLE_SHOP
