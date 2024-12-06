@@ -46,7 +46,7 @@ jobs:
         cd refactor_dbt
         export DBT_PROFILES_DIR=/home/runner/work/refactor-dbt/refactor-dbt/refactor_dbt
         ls /home/runner/work/refactor-dbt/refactor-dbt/refactor_dbt
-        dbt list
+        dbt debug --config-dir
         dbt build
       env:
         SNOWFLAKE_ACCOUNT: jab93307.us-east-1
