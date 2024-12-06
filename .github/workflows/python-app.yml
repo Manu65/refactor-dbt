@@ -40,6 +40,8 @@ jobs:
         dbt deps
     - name: build dbt
       run: |
+        ls
+        ls /home/runner/work
         dbt build --full-refresh --profiles-dir ./
         echo "completed"
       env:
