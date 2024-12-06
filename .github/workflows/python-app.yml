@@ -41,6 +41,7 @@ jobs:
     - name: build dbt
       run: |
         ls
+        pwd
         ls /home/runner/work
         dbt build --full-refresh --profiles-dir ./
         echo "completed"
