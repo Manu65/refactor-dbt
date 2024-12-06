@@ -44,7 +44,7 @@ jobs:
         pwd
         ls /home/runner/work
         cd refactor_dbt
-        dbt build --full-refresh --profiles-dir ./
+        dbt build --full-refresh --profiles-dir .
       env:
         SNOWFLAKE_ACCOUNT: jab93307.us-east-1
         SNOWFLAKE_USER: manueldeca
