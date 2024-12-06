@@ -1,4 +1,4 @@
-{# in dbt Develop  comment fAA GG #}
+{# in dbt Develop  comment fAA GG  nhhh#}
 
   {% set old_etl_relation=ref('customer_orders') -%}
 
