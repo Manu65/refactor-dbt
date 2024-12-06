@@ -40,7 +40,7 @@ jobs:
         dbt deps
     - name: build dbt
       run: |
-        dbt build --full-refresh --profile-dir ./
+        dbt build --full-refresh --profiles-dir ./
         echo "completed"
       env:
         SNOWFLAKE_ACCOUNT: jab93307.us-east-1
