@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: fct_customer_orders
+    description: "Af ct_customer_orders  dbt model"
+    tests:
+      - dbt_expectations.expect_table_aggregation_to_equal_other_table:
+          expression: count(*), sum(order_value_dollars)
+          compare_model: ref("customer_orders")
+          group_by: [customer_id]
+    columns:
+      - name: customer_id
+        tests:
+          - relationships:
+              to: ref('customer_orders')
+              field: customer_id
