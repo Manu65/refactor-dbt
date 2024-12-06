@@ -43,6 +43,7 @@ jobs:
         ls
         pwd
         ls /home/runner/work
+        cd refactor_dbt
         dbt build --full-refresh --profiles-dir ./
         echo "completed"
       env:
