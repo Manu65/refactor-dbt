@@ -6,3 +6,5 @@ refactor_dbt: # this does not match the profile: key
       schema: MART
       database: JAFFLE_SHOP
       account: jab93307.us-east-1
+      user: manueldeca
+      password: Truquini65!
