@@ -37,4 +37,5 @@ jobs:
         echo "llego al final"
         pip install dbt-core dbt-snowflake 
         dbt --version
+        cd refactor_dbt
         dbt deps
