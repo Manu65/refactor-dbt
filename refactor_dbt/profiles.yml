@@ -1,5 +1,6 @@
-name: refactor_dbt
-target: dev
-outputs:
-dev:
-type: snowflake
+refactor_dbt: # this does not match the profile: key
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      schema: MART
