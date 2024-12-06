@@ -39,3 +39,4 @@ jobs:
         dbt --version
         cd refactor_dbt
         dbt deps
+        dbt build
